@@ -11,9 +11,13 @@ public class AnimationController : MonoBehaviour
     private Transform tf;
     public Camera mouseCamera;
 
+    float InputX;
+    public float InputY;
+
     // Start is called before the first frame update
     void Start()
     {
+        // gets the animator 
         if (anim == null) anim = GetComponent<Animator>();
         {
             anim = GetComponent<Animator>();
@@ -24,6 +28,13 @@ public class AnimationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // gets the vertical and horizontal axis for running animation
+        InputX = Input.GetAxis("Vertical");
+        InputY = Input.GetAxis("Horizontal");
+        anim.SetFloat("InputY", InputY);
+        anim.SetFloat("InputX", InputX);
+
+
         // get the world vector
         Vector3 worldMoveVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         worldMoveVector.Normalize();
@@ -36,6 +47,7 @@ public class AnimationController : MonoBehaviour
 
         HandleRotation();
     }
+
 
     void HandleRotation()
     {

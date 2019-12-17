@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageHandler : CustomHealth
+public class DamageHandler : HealthBar
 {
     public int playerHealth;
     GameObject player;
@@ -19,7 +19,7 @@ public class DamageHandler : CustomHealth
 
         if (playerHealth <= 0)
         {
-            
+            gameObject.SetActive(false);
         }
     }
     private void OnTriggerEnter()

@@ -55,15 +55,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AnimationController.cs" />
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\CustomHealth.cs" />
-     <Compile Include="Assets\Scripts\DamageHandler.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Health And Damage\DamageHandler.cs" />
+     <Compile Include="Assets\Scripts\Health And Damage\HealthSystem.cs" />
      <Compile Include="Assets\Scripts\HealthController.cs" />
      <Compile Include="Assets\Scripts\HealthPickup.cs" />
-     <Compile Include="Assets\Scripts\IKThing.cs" />
      <Compile Include="Assets\Scripts\Pickup.cs" />
-     <Compile Include="Assets\Scripts\Test.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\AnimationController.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\IKThing.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

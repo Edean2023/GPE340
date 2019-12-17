@@ -14,6 +14,8 @@ public class AnimationController : MonoBehaviour
     float InputX;
     public float InputY;
 
+    public bool WeaponActive;
+
     // Start is called before the first frame update
     void Start()
     {
